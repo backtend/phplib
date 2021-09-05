@@ -1,0 +1,39 @@
+{
+  "name": "backtend/phplib",
+  "description": "Several commonly used php libraries",
+  "license": "Apache-2.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "backtend",
+      "email": "backtend@gmail.com"
+    }
+  ],
+  "keywords": [
+    "RedisLib",
+    "QrcodeLib",
+    "MarkdownLib",
+    "CrawlLib",
+    "TreeLib"
+  ],
+  "require": {
+    "php": "^7.0",
+    "backtend/phpenv": "~1.0"
+  },
+  "require-dev": {
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "backtend\\phplib\\": "src/"
+    },
+    "files": [
+      "functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "backtend\\phplib\\": "tests/"
+    }
+  }
+}
