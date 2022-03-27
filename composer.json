@@ -17,7 +17,7 @@
     "TreeLib"
   ],
   "require": {
-    "php": "^7.0",
+    "php": "^7.0 || ^8.0"
     "backtend/phpenv": "~1.0"
   },
   "require-dev": {
