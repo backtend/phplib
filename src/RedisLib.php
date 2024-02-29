@@ -92,4 +92,21 @@ class RedisLib
         }
         return $instance;
     }
+	
+	
+    /**
+     * 返回redis键
+     * 建议输入 __METHOD__, 关键索引值
+     * @return string
+     */
+    public static function key():string
+    {
+        $args = func_get_args();
+        $replace = ['\\', ':'];
+        $keys = [];
+        foreach ($args as $arg){
+            $keys[] = str_replace($replace, '_', $arg);
+        }
+        return join('_', $keys);
+    }
 }
